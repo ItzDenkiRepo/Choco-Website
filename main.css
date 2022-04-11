@@ -1,0 +1,520 @@
+/* Reset CSS */
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  text-decoration: none;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+button {
+  outline: none;
+}
+/* End Reset CSS */
+
+@font-face {
+  font-family: "CircularStd";
+  src: url("fonts/CircularStd-Book.ttf");
+}
+
+@font-face {
+  font-family: "CircularStd-Bold";
+  src: url("fonts/CircularStd-Bold.ttf");
+}
+
+body {
+  font-family: "CircularStd";
+  line-height: 1;
+}
+
+.curveParent {
+  filter: drop-shadow(10px 5px 5px rgba(0, 0, 0, 0.65));
+}
+
+.firstCurve {
+  width: 100%;
+  height: 105vh;
+  display: flex;
+  align-items: left;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.mainText {
+  color: white;
+  margin-left: 70px;
+  margin-bottom: 8vh;
+}
+
+.mainTitle {
+  font-family: "CircularStd-Bold";
+  font-size: 90px;
+  margin-bottom: 4vh;
+}
+
+.mainPara {
+  font-size: 18px;
+  margin-bottom: 5vh;
+  width: 700px;
+  color: #a0a9b2;
+  line-height: 23px;
+}
+
+.mainButton {
+  text-align: center;
+  padding: 15px 30px;
+  background-size: 200% auto;
+  background-image: linear-gradient(
+    to right,
+    #3e92cc 0%,
+    #848cff 51%,
+    #3e92cc 100%
+  );
+  color: black;
+  border-radius: 65px;
+  font-size: 14px;
+  background-position: left center;
+  transition: background-position 0.7s;
+}
+
+.mainButton:hover {
+  background-position: right center;
+}
+
+.menu {
+  position: absolute;
+  color: white;
+  z-index: 1;
+  padding: 40px;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  box-sizing: border-box;
+  align-items: center;
+}
+
+.menuItem {
+  padding: 18px;
+  color: #a0a9b2;
+}
+
+.currentMenu {
+  color: white;
+}
+
+.secondSector {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.secondSubTitle {
+  padding-top: 30px;
+  font-size: 20px;
+  color: #959698;
+  width: 37%;
+}
+
+.theMainImages {
+  display: flex;
+  flex-direction: row;
+  padding-top: 50px;
+  align-items: center;
+}
+
+.mainImage {
+  width: 150px;
+  height: 150px;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.logo {
+  width: 70px;
+  height: auto;
+  margin-right: auto;
+}
+
+.infoContainer {
+  display: flex;
+  flex-direction: column;
+  width: 180px;
+  margin: 80px;
+  margin-top: 10px;
+  align-items: center;
+  margin-bottom: 0;
+}
+
+.mainImageTitle {
+  font-size: 19px;
+  font-family: "CircularStd-Bold";
+  padding: 15px;
+}
+
+.mainImagePara {
+  color: #8e8f91;
+  line-height: 23px;
+  font-size: 17px;
+}
+
+.learnMore {
+  color: #4294cd;
+  font-size: 17px;
+  padding: 15px;
+}
+
+.nodrag {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.lineDivider {
+  width: 75%;
+  height: 0.3vh;
+  background-color: #d4d4d4;
+  margin: 50px;
+  margin-bottom: 69px;
+}
+
+.secondTitle {
+  font-family: "CircularStd-Bold";
+  font-size: 65px;
+  color: #212226;
+}
+
+.tileTitle {
+  font-size: 20px;
+  font-family: "CircularStd-Bold";
+  margin: 10px;
+}
+
+.tileImage {
+  width: 110px;
+  height: auto;
+  position: absolute;
+  padding-bottom: 25px;
+}
+
+.tile {
+  -webkit-box-shadow: 0px 0px 15px 2px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 0px 0px 15px 2px rgba(0, 0, 0, 0.3);
+  box-shadow: 0px 0px 15px 2px rgba(0, 0, 0, 0.3);
+  background-color: white;
+  border-radius: 8px;
+  width: 145px;
+  height: 145px;
+  color: #4c4b4b;
+  font-size: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 15px;
+}
+
+.advertiseTiles {
+  margin: 30px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.tileContainer {
+  margin: 20px;
+}
+
+.tilesColumn {
+  display: inline-block;
+}
+
+.bottomCurveGradient {
+  background-image: linear-gradient(to right, #3e92cc, #848cff);
+  width: 100%;
+  height: 60vh;
+}
+
+.curveParent {
+  overflow: hidden;
+  position: relative;
+}
+
+.bigLolCircle {
+  background-image: linear-gradient(to right, #0a0b0f, #083d77);
+  position: absolute;
+  width: 150%;
+  height: 100%;
+  bottom: 100px;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 0 0 50% 50%;
+  z-index: -1;
+  background-size: 85% auto;
+}
+
+.bigLolCircleTwoParent {
+  height: 170px;
+  margin-bottom: -150px;
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+.bigLolCircleTwo {
+  background: white;
+  position: absolute;
+  width: 145%;
+  height: 300%;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 0 0 50% 50%;
+  background-size: 95% auto;
+  filter: drop-shadow(10px 5px 5px rgba(0, 0, 0, 0.4));
+}
+
+.preFooter {
+  background-image: linear-gradient(to right, #3c90ca, #9199fa);
+  padding-top: 300px;
+  width: 100%;
+  height: 38vh;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.preFooterTitle {
+  font-family: "CircularStd-Bold";
+  color: white;
+  font-size: 55px;
+}
+
+.preFooterCallout {
+  color: #c6d6fc;
+  margin-top: 21px;
+  margin-bottom: 21px;
+}
+
+.preFooterButton {
+  text-align: center;
+  border-radius: 65px;
+  font-size: 13px;
+  z-index: 70;
+  padding: 15px 30px;
+  background-color: white;
+  color: #6795e2;
+  filter: drop-shadow(0px 0px 2px rgba(0, 0, 0, 0.4));
+  transition: 0.4s;
+}
+
+.preFooterButton:hover {
+  background-color: #6795e2;
+  color: white;
+  transition: 0.4s;
+}
+
+footer {
+  width: 100%;
+  background-color: #212226;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footerContainer {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  width: 55%;
+  padding: 6vh;
+}
+
+.footerInfoContainer {
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.fICHeader {
+  font-size: 22px;
+  font-family: "CircularStd-Bold";
+  margin-bottom: 14px;
+  text-align: left;
+}
+
+.fICPara {
+  color: #808080;
+  text-align: left;
+  padding-top: 7px;
+  padding-bottom: 7px;
+}
+
+.fICPara:hover {
+  color: #a8a8a8;
+}
+
+.copyright {
+  font-size: 16px;
+  position: absolute;
+  z-index: 2;
+  margin-top: 115px;
+  color: #808080;
+}
+
+.socialImage {
+  width: 40px;
+  height: auto;
+}
+
+.socialImages {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+/* Media Queries / Mobile Optimization */
+@media only screen and (max-width: 750px) {
+  .bigLolCircle {
+width: 100%;
+left: 50%;
+}
+.firstCurve{
+  width: 100%;
+}
+.advertiseTiles, .mainImages, .theMainImages{
+  flex-direction: column;
+}
+.secondTitle{
+  font-size: 50px;
+}
+.mainTitle{
+  font-size: 70px;
+}
+.footerContainer{
+    flex-wrap: wrap;
+}
+.bigLolCircle{
+   background-size: 100% auto;
+}
+    
+}
+/* End Mobile Optimization */
